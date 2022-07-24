@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="favicons\favicon-16x16.png">
+  <!-- Links -->
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="css\style.css">
+  <!-- Main JS -->
+  <script defer src="./js/script.js"></script>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+  <title>Pokédex</title>
 </head>
-
 <body>
+  
+  <main>
+    <img src="#" alt="pokemon" class="pokemon__image">
 
-    <main>
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
 
-        <img src="" alt="pokemon" class="pokemon-image">
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Nome ou Número"
+        required
+      />
+    </form>
 
-       <h1 class="pokemon-data">
-        <span class="pokemon-numero">6</span> -
-        <span class="pokemon-name">charizard</span>
-       </h1>
+    <div class="buttons">
+      <button class="button btn-prev">Voltar &lt;</button>
+      <button class="button btn-next">Próximo &gt;</button>
+    </div>
 
-       <form class="form">
-        <input
-            type="search"
-            class="input-search"
-            placeholder="Nome ou Número"
-            required
-        />
-       </form>
-
-       <div class="buttons">
-        <button class="button btn-previo">Prev &lt;</button>
-        <button class="button btn-proximo">Proximo &gt;</button>
-       </div>
-
-        <img src="images\pokedex.png" alt="Pokedex" class="pokedex">
-
-    </main>
-
-
-
-    <script src="js\script.js"></script>
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+  </main>
 
 </body>
-
 </html>
